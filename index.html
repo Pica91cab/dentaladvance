@@ -21,37 +21,57 @@
         </div>
     </header>
 
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a Dental Advance</h1>
+            <p>Tu sonrisa, nuestra prioridad.</p>
+            <a href="#services" class="btn">Nuestros Servicios</a>
+        </div>
+    </section>
+
     <section id="services" class="section">
         <div class="container">
             <h2>Servicios</h2>
-            <p>Ofrecemos una amplia gama de servicios dentales para mantener tu sonrisa saludable.</p>
-            <div class="services">
-                <div class="service">
-                    <h3>Odontología General</h3>
-                    <p>Cuida tu salud bucal con nuestros servicios de odontología general.</p>
-                </div>
+            <div class="services-list">
                 <div class="service">
                     <h3>Ortodoncia</h3>
-                    <p>Corrige la posición de tus dientes con nuestros tratamientos de ortodoncia.</p>
+                    <p>Brackets y alineadores para una sonrisa perfecta.</p>
+                    <img src="img/porfolio (1).jpg" alt="Ortodoncia">
                 </div>
                 <div class="service">
-                    <h3>Implantes Dentales</h3>
-                    <p>Recupera la funcionalidad y estética de tu boca con nuestros implantes dentales.</p>
+                    <h3>Implantes</h3>
+                    <p>Implantes dentales de alta calidad.</p>
+                    <img src="img/porfolio (2).jpg" alt="Implantes">
+                </div>
+                <div class="service">
+                    <h3>Estética Dental</h3>
+                    <p>Blanqueamiento y carillas.</p>
+                    <img src="img/porfolio (3).jpg" alt="Estética Dental">
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Acerca de</h2>
+            <p>Dental Advance se dedica a ofrecer soluciones innovadoras en odontología.</p>
         </div>
     </section>
 
     <section id="portfolio" class="section">
         <div class="container">
             <h2>Portafolio</h2>
-            <div class="portfolio-gallery">
-                <img src="img/porfolio (79).jpg" alt="Portafolio 1">
-                <img src="img/porfolio (80).jpg" alt="Portafolio 2">
-                <img src="img/porfolio (81).jpg" alt="Portafolio 3">
-                <img src="img/porfolio (82).jpg" alt="Portafolio 4">
-                <img src="img/porfolio (83).jpg" alt="Portafolio 5">
-                <img src="img/porfolio (84).jpg" alt="Portafolio 6">
+            <div class="portfolio-list">
+                <div class="portfolio-item">
+                    <img src="img/porfolio (4).jpg" alt="Portafolio 1">
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/porfolio (5).jpg" alt="Portafolio 2">
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/porfolio (6).jpg" alt="Portafolio 3">
+                </div>
             </div>
         </div>
     </section>
@@ -59,11 +79,14 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Contacto</h2>
-            <form action="https://formspree.io/your-email" method="POST">
-                <input type="text" name="name" placeholder="Nombre" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
             </form>
         </div>
     </section>
