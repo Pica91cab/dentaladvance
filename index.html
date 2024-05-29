@@ -5,75 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Advance</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="img/LOGO.png" alt="Dental Advance Logo" class="logo">
+            <img src="img/LOGO DENTAL ADVANCE VECTORES.png" alt="Dental Advance Logo" class="logo">
             <nav>
                 <ul>
                     <li><a href="#services">Servicios</a></li>
                     <li><a href="#about">Acerca de</a></li>
                     <li><a href="#portfolio">Portafolio</a></li>
                     <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#" onclick="switchLanguage('es')">Español</a></li>
+                    <li><a href="#" onclick="switchLanguage('en')">English</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
     <section class="hero"></section>
 
     <section id="services" class="section">
-        <div class="container">
-            <h2>Servicios</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Especialidades</h3>
-                    <p>Descripción del servicio.</p>
-                </div>
-                <div class="service">
-                    <h3>Estética y Prótesis</h3>
-                    <p>Descripción del servicio.</p>
-                </div>
-                <div class="service">
-                    <h3>Ortodoncia</h3>
-                    <p>Descripción del servicio.</p>
-                </div>
+        <h2>Servicios</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Ortodoncia</h3>
+                <p>Corrección de dientes y mandíbulas desalineadas.</p>
+            </div>
+            <div class="service">
+                <h3>Implantes Dentales</h3>
+                <p>Reemplazo de dientes perdidos con implantes de alta calidad.</p>
+            </div>
+            <div class="service">
+                <h3>Estética Dental</h3>
+                <p>Mejora de la apariencia de su sonrisa con técnicas avanzadas.</p>
             </div>
         </div>
     </section>
 
+    <section id="about" class="section">
+        <h2>Acerca de</h2>
+        <p>Dental Advance es una clínica odontológica de vanguardia que ofrece una amplia gama de servicios dentales. Nuestro equipo de profesionales está dedicado a brindar la mejor atención posible a nuestros pacientes.</p>
+    </section>
+
     <section id="portfolio" class="section">
-        <div class="container">
-            <h2>Portafolio</h2>
-            <div class="portfolio">
-                <div class="portfolio-item">
-                    <img src="img/porfolio (16).jpg" alt="Porfolio 1">
-                </div>
-                <div class="portfolio-item">
-                    <img src="img/porfolio (29).jpg" alt="Porfolio 2">
-                </div>
-                <div class="portfolio-item">
-                    <img src="img/porfolio (53).jpg" alt="Porfolio 3">
-                </div>
+        <h2>Portafolio</h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="img/porfolio (16).jpg" alt="Portfolio Image 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="img/porfolio (29).jpg" alt="Portfolio Image 2">
+            </div>
+            <div class="portfolio-item">
+                <img src="img/porfolio (53).jpg" alt="Portfolio Image 3">
             </div>
         </div>
     </section>
 
     <section id="contact" class="section">
-        <div class="container">
-            <h2>Contacto</h2>
+        <h2>Contacto</h2>
+        <div class="contact">
             <form>
                 <input type="text" name="name" placeholder="Nombre" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Mensaje" required></textarea>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
 
     <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
+        </div>
         <p>&copy; 2024 Dental Advance. Todos los derechos reservados.</p>
     </footer>
+
+    <a href="https://wa.me/525512345678" id="whatsapp-icon" target="_blank" class="fab fa-whatsapp"></a>
+
+    <script>
+        function switchLanguage(lang) {
+            if (lang === 'es') {
+                window.location.href = 'index.html';
+            } else if (lang === 'en') {
+                window.location.href = 'index-en.html';
+            }
+        }
+    </script>
 </body>
 </html>
