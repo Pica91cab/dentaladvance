@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f8f8;
 }
 
 header {
@@ -35,21 +36,26 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: #333;
+    font-weight: bold;
 }
 
 .hero {
     height: 300px; /* Ajusta la altura según sea necesario */
     background-size: cover;
     background-position: center;
+    background-image: url('img/your-hero-image.jpg'); /* Cambia a tu imagen */
 }
 
 .section {
-    padding: 40px 0;
+    padding: 60px 20px;
+    background-color: #FFF;
 }
 
 .section h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
 }
 
 .services, .portfolio {
@@ -100,4 +106,32 @@ footer {
     color: #FFF;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+}
+
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    font-size: 24px;
 }
