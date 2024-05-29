@@ -9,57 +9,63 @@
 <body>
     <header>
         <div class="container">
-            <img src="img/LOGO DENTAL ADVANCE VECTORES.ai" alt="Dental Advance Logo" class="logo">
+            <img src="img/logo-dental-advance.png" alt="Dental Advance Logo" class="logo">
             <nav>
                 <ul>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#about">Acerca de</a></li>
-                    <li><a href="#portfolio">Portafolio</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
-    <section id="portfolio" class="section">
-        <h2>Portafolio</h2>
-        <div class="gallery">
-            <img src="img/porfolio (16).jpg" alt="Imagen 1">
-            <img src="img/porfolio (29).jpg" alt="Imagen 2">
-            <img src="img/porfolio (53).jpg" alt="Imagen 3">
-            <img src="img/porfolio (55).jpg" alt="Imagen 4">
-            <img src="img/porfolio (6).jpg" alt="Imagen 5">
-            <img src="img/porfolio (63).jpg" alt="Imagen 6">
-            <img src="img/porfolio (65).jpg" alt="Imagen 7">
-            <img src="img/porfolio (7).jpg" alt="Imagen 8">
+    <main>
+        <section id="servicios" class="section">
+            <div class="container">
+                <h2>Servicios</h2>
+                <p>Ofrecemos una amplia gama de servicios odontológicos...</p>
+            </div>
+        </section>
+        <section id="acerca" class="section">
+            <div class="container">
+                <h2>Acerca de</h2>
+                <p>Somos un centro odontológico comprometido con tu salud dental...</p>
+            </div>
+        </section>
+        <section id="portafolio" class="section">
+            <div class="container">
+                <h2>Portafolio</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <img src="img/porfolio (16).jpg" alt="Porfolio 1">
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/porfolio (29).jpg" alt="Porfolio 2">
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/porfolio (53).jpg" alt="Porfolio 3">
+                    </div>
+                    <!-- Agrega más imágenes según sea necesario -->
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form action="submit-form.php" method="post">
+                    <input type="text" name="name" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu email" required>
+                    <textarea name="message" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dental Advance. Todos los derechos reservados.</p>
         </div>
-    </section>
-
-    <section id="services" class="section">
-        <h2>Servicios</h2>
-        <div class="service">
-            <h3>Especialidades</h3>
-            <p>Descripción de especialidades...</p>
-        </div>
-        <!-- Añadir más servicios aquí -->
-    </section>
-
-    <section id="about" class="section">
-        <h2>Acerca de</h2>
-        <p>Descripción del centro odontológico...</p>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Contacto</h2>
-        <form>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+    </footer>
 </body>
 </html>
