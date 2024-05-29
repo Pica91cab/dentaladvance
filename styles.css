@@ -1,107 +1,103 @@
+/* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
 header {
-    background-color: #444;
-    color: white;
-    padding: 20px;
+    background-color: #FFF;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.logo {
-    max-height: 100px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
+header .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul li a {
-    color: white;
+header .logo {
+    max-width: 150px; /* Ajusta el tamaño del logo */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    color: #333;
 }
 
-nav ul li a:hover {
-    background-color: #666;
+.hero {
+    height: 300px; /* Ajusta la altura según sea necesario */
+    background-size: cover;
+    background-position: center;
 }
 
 .section {
-    padding: 60px 20px;
-    text-align: center;
+    padding: 40px 0;
 }
 
 .section h2 {
-    font-size: 2em;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.grid {
+.services, .portfolio {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
 }
 
-.grid-item {
-    flex: 1 1 calc(33.333% - 40px);
-    max-width: calc(33.333% - 40px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+.service, .portfolio-item {
+    flex: 1 1 calc(33% - 40px);
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    background-color: #FFF;
 }
 
-.grid-item img {
-    width: 100%;
+.portfolio-item img {
+    max-width: 100%;
     height: auto;
-    display: block;
 }
 
-form {
+footer {
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-form input, form textarea {
+.contact form input, .contact form textarea {
     padding: 10px;
-    font-size: 16px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #444;
+.contact form button {
+    padding: 10px;
     border: none;
+    background-color: #333;
+    color: #FFF;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #666;
-}
-
-footer {
-    background-color: #444;
-    color: white;
-    text-align: center;
-    padding: 20px;
 }
