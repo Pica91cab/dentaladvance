@@ -20,9 +20,8 @@
                 </ul>
             </nav>
             <div class="social-icons top-right">
-                <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f"></a>
-                <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
-                <a href="https://wa.me/525512345678" target="_blank" class="fab fa-whatsapp"></a>
+                <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f fa-2x"></a>
+                <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram fa-2x"></a>
             </div>
         </div>
     </header>
@@ -38,6 +37,15 @@
             </div>
             <div class="mySlides fade">
                 <img src="img/porfolio (53).jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/porfolio (1).jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/porfolio (2).jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/porfolio (3).jpg" style="width:100%">
             </div>
             <!-- Botones de navegación -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -97,12 +105,18 @@
 
     <footer>
         <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f"></a>
-            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
-            <a href="https://wa.me/525512345678" target="_blank" class="fab fa-whatsapp"></a>
+            <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f fa-2x"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram fa-2x"></a>
+            <a href="https://wa.me/525512345678" class="fab fa-whatsapp" target="_blank"></a>
         </div>
         <p>&copy; 2024 Dental Advance. Todos los derechos reservados.</p>
     </footer>
+
+    <a href="https://wa.me/525512345678" id="whatsapp-icon" target="_blank">
+        <div class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> Chat with us
+        </div>
+    </a>
 
     <script>
         function switchLanguage(lang) {
@@ -130,7 +144,10 @@
         }
 
         function plusSlides(n) {
-            showSlides(slideIndex += n);
+            slideIndex += n;
+            if (slideIndex > document.getElementsByClassName("mySlides").length) {slideIndex = 1}
+            if (slideIndex < 1) {slideIndex = document.getElementsByClassName("mySlides").length}
+            showSlides();
         }
     </script>
 </body>
