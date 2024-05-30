@@ -1,15 +1,12 @@
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #FFF;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+    background-color: #4CAF50;
+    padding: 20px;
 }
 
 header .container {
@@ -19,67 +16,105 @@ header .container {
 }
 
 header .logo {
-    max-width: 150px; /* Ajusta el tamaño del logo */
+    width: 150px;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    gap: 20px;
 }
 
 header nav ul li {
-    margin-left: 20px;
+    display: inline;
 }
 
 header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    font-size: 18px;
 }
 
 .hero {
-    height: 300px; /* Ajusta la altura según sea necesario */
+    background-image: url('img/hero.jpg');
+    height: 400px;
     background-size: cover;
     background-position: center;
-    background-image: url('img/your-hero-image.jpg'); /* Cambia a tu imagen */
 }
 
 .section {
     padding: 60px 20px;
-    background-color: #FFF;
+    text-align: center;
 }
 
 .section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5em;
-    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .services, .portfolio {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .service, .portfolio-item {
-    flex: 1 1 calc(33% - 40px);
-    margin: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     padding: 20px;
-    text-align: center;
-    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-item img {
     max-width: 100%;
     height: auto;
-    max-height: 200px; /* Ajusta la altura máxima */
+    border-radius: 8px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input, .contact form textarea, .contact form button {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact form button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 footer {
     background-color: #333;
-    color: #FFF;
-    text-align: cent
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
