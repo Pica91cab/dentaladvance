@@ -42,6 +42,7 @@ nav a {
     background-color: #eeeeee;
     height: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #006d77;
@@ -132,4 +133,4 @@ nav a {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
-    border-radius: 5px
+   
