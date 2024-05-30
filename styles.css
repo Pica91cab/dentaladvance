@@ -14,10 +14,13 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 300px; /* Ajuste del tamaño del logo */
 }
 
 nav ul {
@@ -32,18 +35,55 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    margin: 0 10px;
 }
 
 .hero {
-    background-image: url('img/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #eeeeee;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #006d77;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
 }
 
 .section {
@@ -92,34 +132,4 @@ nav a {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact button {
-    background-color: #006d77;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-}
-
-.social-icons a {
-    color: #006d77;
-    margin: 0 10px;
-    font-size: 24px;
-}
-
-#whatsapp-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 40px;
-    color: #25d366;
-}
+    border-radius: 5px
