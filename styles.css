@@ -40,7 +40,7 @@ nav a {
 
 .hero {
     background-color: #eeeeee;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,36 +98,3 @@ nav a {
 
 .section h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #006d77;
-}
-
-.services, .portfolio {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.service, .portfolio-item {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(33% - 40px);
-}
-
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding:
